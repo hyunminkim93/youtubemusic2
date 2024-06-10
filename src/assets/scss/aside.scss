@@ -55,10 +55,13 @@
             }
 
             .artist {
+                width: 100%;
+                display: block;
                 font-size: 20px;
                 color: var(--black700);
                 font-weight: 900;
-                margin-left: 68px;
+                margin: 0 auto;
+                text-align: center;
             }
         }
 
@@ -118,7 +121,7 @@
                 }
 
                 &.bg {
-                    background: linear-gradient(90deg, #5779FF 0%, #7E56FF 100%);
+                    background: linear-gradient(90deg, #e657ffd6 0%, #ff56c5b3 100%);
 
                     svg {
                         color: #fff;
@@ -128,11 +131,66 @@
         }
 
         .volume {
-            display: none;
+            width: 100%;
+            margin-bottom: 20px;
+            color: #DDA0DD;
+            /* 텍스트 색상 연한 보라색으로 변경 */
         }
+
+        .volume input[type="range"] {
+            width: 100%;
+            height: 15px;
+            background: linear-gradient(to right, #d847d85e, #DDA0DD);
+            border-radius: 10px;
+            cursor: pointer;
+            margin-bottom: 10px;
+            transition: background 0.3s ease;
+            margin-top: 26px;
+        }
+
+        .volume input[type="range"]:hover {
+            background: linear-gradient(to right, #d34dd3);
+        }
+
+        .volume input[type="range"]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 20px;
+            height: 20px;
+            background: #c627db95;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+        .volume input[type="range"]::-moz-range-thumb {
+            width: 20px;
+            height: 10px;
+            background: #DDA0DD;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+        .volume input[type="range"]:focus {
+            outline: none;
+        }
+
+        .volume .label {
+            font-size: 14px;
+            margin-bottom: 5px;
+            text-align: center;
+        }
+
+
     }
 
     .play-list {
+        .current-track.active {
+            background-color: #c524de71;
+            /* or any other desired styling for the currently playing track */
+            font-weight: bold;
+            /* optional: to emphasize the currently playing track */
+        }
+
         h3 {
             text-align: center;
             font-size: 1.25rem;
@@ -182,7 +240,7 @@
                 .title {
                     font-size: 20px;
                     width: calc(100% - 80px);
-                    height: 40px;
+                    max-height: 45px;
                     font-family: var(--fontJ);
                     font-weight: 300;
                     overflow: hidden;

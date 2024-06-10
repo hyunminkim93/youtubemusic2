@@ -86,14 +86,113 @@
             }
         }
     }
+}
 
-    .search-results {
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        z-index: 1000;
-        width: 100%;
-        height: 400px;
-        background-color: #ccc;
+.youtube-result {
+    position: fixed;
+    left: 260px;
+    right: 400px;
+    bottom: 0;
+    height: 40vh;
+    /* Adjust height to fit the content comfortably */
+    background-color: #d9c4e8;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: #4a3f63;
+    text-align: center;
+
+    h3 {
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+        color: #4B0082;
+        text-decoration: underline;
+        text-decoration-color: rgba(184, 24, 220, 0.5);
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+
+        li {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            border-bottom: 1px solid rgba(184, 24, 220, 0.2);
+
+            .img {
+                background-size: cover;
+                width: 60px;
+                height: 60px;
+                margin-right: 15px;
+                border-radius: 4px;
+            }
+
+            .title {
+                font-size: 1rem;
+                flex-grow: 1;
+                color: #4B0082;
+                text-decoration: underline;
+                text-decoration-color: rgba(184, 24, 220, 0.5);
+            }
+
+            .playNow {
+                font-size: 1.5rem;
+                margin-right: 10px;
+                color: #8A2BE2;
+            }
+
+            .listAdd {
+                font-size: 1.5rem;
+                color: #8A2BE2;
+            }
+        }
+    }
+
+    h3 {
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+        color: #4B0082;
+        text-decoration: underline;
+        text-decoration-color: rgba(184, 24, 220, 0.5);
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+
+        li {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            border-bottom: 1px solid rgba(184, 24, 220, 0.2);
+
+            .img {
+                background-size: cover;
+                width: 60px;
+                height: 60px;
+                margin-right: 15px;
+                border-radius: 4px;
+            }
+
+            .title {
+                font-size: 1rem;
+                flex-grow: 1;
+                color: #4B0082;
+                text-decoration: underline;
+                text-decoration-color: rgba(184, 24, 220, 0.5);
+            }
+
+            .playNow {
+                font-size: 1.5rem;
+                margin-right: 10px;
+                color: #8A2BE2;
+            }
+
+            .listAdd {
+                font-size: 1.5rem;
+                color: #8A2BE2;
+            }
+        }
     }
 }
